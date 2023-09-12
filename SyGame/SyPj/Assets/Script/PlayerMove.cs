@@ -13,7 +13,17 @@ public class PlayerMove : MonoBehaviour
         rigid = GetComponent<Rigidbody2D>();
     }
 
-     void FixedUpdate()
+    //normalized
+
+     void Update()
+    {
+        if (Input.GetButtonUp("Horizontal"))
+        {
+            rigid.velocity = new Vector2(rigid.velocity.normalized.x * 0.5f  , rigid.velocity.y);
+        }
+    }
+
+    void FixedUpdate()
     {
         float h = Input.GetAxisRaw("Horizontal");
         rigid.AddForce(Vector2.right * h , ForceMode2D.Impulse);
