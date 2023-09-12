@@ -9,10 +9,12 @@ public class PlayerMove : MonoBehaviour
     // Start is called before the first frame update
     Rigidbody2D rigid;
     SpriteRenderer spriteRenderer;
+    Animator animator;
     void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
     }
 
     //normalized
@@ -29,6 +31,15 @@ public class PlayerMove : MonoBehaviour
         if (Input.GetButtonUp("Horizontal"))
         {
             spriteRenderer.flipX = Input.GetAxisRaw("Horizontal") == -1;
+        }
+
+        if(rigid.velocity.normalized.x == 0)
+        {
+            animator.SetBool("isWalking", false);
+        }
+        else
+        {
+            animator.SetBool("isWalking", true);
         }
 
     }
