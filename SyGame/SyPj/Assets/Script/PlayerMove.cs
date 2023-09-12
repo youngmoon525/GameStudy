@@ -33,7 +33,7 @@ public class PlayerMove : MonoBehaviour
             spriteRenderer.flipX = Input.GetAxisRaw("Horizontal") == -1;
         }
 
-        if(rigid.velocity.normalized.x == 0)
+        if(rigid.velocity.normalized.x < 0.3)
         {
             animator.SetBool("isWalking", false);
         }
