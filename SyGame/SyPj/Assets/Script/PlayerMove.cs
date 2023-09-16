@@ -23,7 +23,7 @@ public class PlayerMove : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") && !animator.GetBool("isJumping"))
         {
             rigid.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
             animator.SetBool("isJumping", true);
@@ -40,9 +40,14 @@ public class PlayerMove : MonoBehaviour
         if (Input.GetButtonUp("Horizontal"))
         {
             spriteRenderer.flipX = Input.GetAxisRaw("Horizontal") == -1;
+        
         }
+/*        if (Mathf.Abs(rigid.velocity.x) < 0.3)
+            animator.SetBool("isWalking", false);
+        else
+            animator.SetBool("isWalking", true);*/
 
-        if(rigid.velocity.normalized.x < 0.3)
+        if (rigid.velocity.normalized.x < 0.3)
         {
             animator.SetBool("isWalking", false);
         }
