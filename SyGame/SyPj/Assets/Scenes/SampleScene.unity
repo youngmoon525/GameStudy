@@ -567,7 +567,7 @@ Transform:
   m_GameObject: {fileID: 592235628}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.49, y: 1.57, z: 0}
+  m_LocalPosition: {x: -0.366, y: 1.905, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -640,7 +640,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 2
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 4
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -695,7 +695,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8, y: 1}
+  m_Size: {x: 0.6, y: 0.9}
   m_EdgeRadius: 0
 --- !u!95 &592235633
 Animator:
@@ -731,6 +731,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 4
+  jumpPower: 20
 --- !u!1 &839511232
 GameObject:
   m_ObjectHideFlags: 0
@@ -742,7 +743,7 @@ GameObject:
   - component: {fileID: 839511234}
   - component: {fileID: 839511233}
   - component: {fileID: 839511235}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -872,7 +873,7 @@ GameObject:
   - component: {fileID: 905425827}
   - component: {fileID: 905425826}
   - component: {fileID: 905425825}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Floor (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1002,7 +1003,7 @@ GameObject:
   - component: {fileID: 960414653}
   - component: {fileID: 960414652}
   - component: {fileID: 960414651}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Floor (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1132,7 +1133,7 @@ GameObject:
   - component: {fileID: 972738009}
   - component: {fileID: 972738008}
   - component: {fileID: 972738010}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1262,7 +1263,7 @@ GameObject:
   - component: {fileID: 1026744229}
   - component: {fileID: 1026744228}
   - component: {fileID: 1026744227}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Floor (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1392,7 +1393,7 @@ GameObject:
   - component: {fileID: 1112059450}
   - component: {fileID: 1112059449}
   - component: {fileID: 1112059448}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Floor (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1522,7 +1523,7 @@ GameObject:
   - component: {fileID: 1132645830}
   - component: {fileID: 1132645829}
   - component: {fileID: 1132645831}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1652,7 +1653,7 @@ GameObject:
   - component: {fileID: 1299272704}
   - component: {fileID: 1299272703}
   - component: {fileID: 1299272702}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Floor (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1912,7 +1913,7 @@ GameObject:
   - component: {fileID: 1772922390}
   - component: {fileID: 1772922389}
   - component: {fileID: 1772922388}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Floor (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2042,7 +2043,7 @@ GameObject:
   - component: {fileID: 1876104045}
   - component: {fileID: 1876104044}
   - component: {fileID: 1876104043}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Floor (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2172,7 +2173,7 @@ GameObject:
   - component: {fileID: 1918826672}
   - component: {fileID: 1918826671}
   - component: {fileID: 1918826670}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Floor (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2302,7 +2303,7 @@ GameObject:
   - component: {fileID: 2026592611}
   - component: {fileID: 2026592610}
   - component: {fileID: 2026592609}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Floor (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2432,7 +2433,7 @@ GameObject:
   - component: {fileID: 2108027587}
   - component: {fileID: 2108027586}
   - component: {fileID: 2108027585}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Floor (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2556,6 +2557,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
+  - {fileID: 592235629}
   - {fileID: 972738009}
   - {fileID: 1132645830}
   - {fileID: 839511234}
@@ -2570,6 +2572,5 @@ SceneRoots:
   - {fileID: 2108027587}
   - {fileID: 2026592611}
   - {fileID: 1593113162}
-  - {fileID: 592235629}
   - {fileID: 254164874}
   - {fileID: 445224955}
