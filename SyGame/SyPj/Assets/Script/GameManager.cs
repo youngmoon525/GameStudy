@@ -75,6 +75,7 @@ public class GameManager : MonoBehaviour
             player.OnDie();
             Debug.Log("Á×À½");
             RestartButton.SetActive(true);
+
         }
     }
 
@@ -86,6 +87,7 @@ public class GameManager : MonoBehaviour
 
     public void Restart()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(0);
     }    
 }

@@ -13,12 +13,22 @@ public class PlayerMove : MonoBehaviour
     Animator animator;
     public GameManager gameManager;
     CapsuleCollider2D capsuleCollider2;
+
+    public AudioClip audioJump;
+    public AudioClip audioAttack;
+    public AudioClip audioDameged;
+    public AudioClip audioItem;
+    public AudioClip audioDie;
+    public AudioClip audioFinish;
+
+    AudioSource audioSrc;
     void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         capsuleCollider2 = GetComponent<CapsuleCollider2D>();
+        audioSrc = GetComponent<AudioSource>(); 
     }
 
     //normalized
@@ -30,6 +40,7 @@ public class PlayerMove : MonoBehaviour
         {
             rigid.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
             animator.SetBool("isJumping", true);
+            playSound(audioJump);
 
         }
 
@@ -42,13 +53,16 @@ public class PlayerMove : MonoBehaviour
 
         if (Input.GetButton("Horizontal"))
         {
+            Debug.Log(Input.GetAxisRaw("Horizontal"));
             spriteRenderer.flipX = Input.GetAxisRaw("Horizontal") == -1;
         }
         /*        if (Mathf.Abs(rigid.velocity.x) < 0.3)
                     animator.SetBool("isWalking", false);
                 else
                     animator.SetBool("isWalking", true);*/
-        if (rigid.velocity.normalized.x < 0.3)
+
+        Debug.Log(rigid.velocity.normalized.x);
+        if (Mathf.Abs(rigid.velocity.x) < 0.3)
         {
             animator.SetBool("isWalking", false);
         }
@@ -107,11 +121,14 @@ public class PlayerMove : MonoBehaviour
                 gameManager.stagePoint += 100;
             else if (isGold)
                 gameManager.stagePoint += 300;
-
+            playSound(audioItem);
             collision.gameObject.SetActive(false);
-        } else if (collision.gameObject.tag == "Finish")
+        } 
+        else if (collision.gameObject.tag == "Finish")
         {
+            playSound(audioFinish); 
             gameManager.NextStage();
+
             //NextStage
         }
     }
@@ -124,10 +141,12 @@ public class PlayerMove : MonoBehaviour
             if(rigid.velocity.y < 0 && transform.position.y > collision.transform.position.y)
             {
                 onAttack(collision.transform);
+                playSound(audioAttack);
             }
             else
             {
                 OnDameged(collision);
+                playSound(audioDameged);
             }
            // Debug.Log("Ãæµ¹");
            
@@ -160,8 +179,6 @@ public class PlayerMove : MonoBehaviour
 
         //Animation
         animator.SetTrigger("doDameged");
-        
-
         Invoke("OffDameged", 2);
 
 
@@ -181,12 +198,19 @@ public class PlayerMove : MonoBehaviour
         spriteRenderer.flipY = true;
         capsuleCollider2.enabled = false;
         rigid.AddForce(Vector2.up * 5, ForceMode2D.Impulse);
+        playSound(audioDie);
 
     }
 
     public void VelocityZero()
     {
         rigid.velocity = Vector2.zero;
+    }
+
+    public void playSound(AudioClip src)
+    {
+        audioSrc.clip = src;
+        audioSrc.Play();
     }
 
 }
