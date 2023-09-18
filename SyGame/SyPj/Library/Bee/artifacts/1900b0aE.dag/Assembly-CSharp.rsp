@@ -380,6 +380,7 @@
 "Assets/Script/EnemyMove.cs"
 "Assets/Script/GameManager.cs"
 "Assets/Script/PlayerMove.cs"
+"Assets/TopDown 2D RPG BE3/ReadMe/Scripts/ReadmeBE3.cs"
 -langversion:9.0
 
 /deterministic

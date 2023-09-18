@@ -2385,3 +2385,404 @@ Received Import Request.
 Start importing Assets/TileMap/Spike.asset using Guid(5e9dfbffd3902944c8ffb5bbbf3cd9b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '059e7a5e94ceb8a6e0a4e52f0bcaedca') in 0.012481 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 285.335330 seconds.
+  path: Assets/Scenes/TopDown.unity
+  artifactKey: Guid(5aee3a6825d7e6b49b9085859cc121eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/TopDown.unity using Guid(5aee3a6825d7e6b49b9085859cc121eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '721f8da54ff7c19bfff626d7673a4a01') in 0.000762 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 2.079175 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67818b6895e296e23f8177961fe7b444') in 0.000581 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\WorkSpaceCoding\git\GameStudy\SyGame\SyPj\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\WorkSpaceCoding\git\GameStudy\SyGame\SyPj\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  1.188 seconds
+Refreshing native plugins compatible for Editor in 4.56 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.520 seconds
+Domain Reload Profiling: 2708ms
+	BeginReloadAssembly (179ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (14ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (49ms)
+	RebuildCommonClasses (41ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (33ms)
+	LoadAllAssembliesAndSetupDomain (919ms)
+		LoadAssemblies (368ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (611ms)
+			TypeCache.Refresh (472ms)
+				TypeCache.ScanAssembly (354ms)
+			ScanForSourceGeneratedMonoScriptInfo (51ms)
+			ResolveRequiredComponents (88ms)
+	FinalizeReload (1521ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (449ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (28ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (80ms)
+			ProcessInitializeOnLoadAttributes (291ms)
+			ProcessInitializeOnLoadMethodAttributes (40ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+Refreshing native plugins compatible for Editor in 3.77 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4006 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 41 unused Assets / (217.4 KB). Loaded Objects now: 4621.
+Memory consumption went from 144.1 MB to 143.9 MB.
+Total: 4.683700 ms (FindLiveObjects: 0.383600 ms CreateObjectMapping: 0.202600 ms MarkObjects: 3.754700 ms  DeleteObjects: 0.341300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 113.473950 seconds.
+  path: Assets/TopDown 2D RPG BE3/App Icon.png
+  artifactKey: Guid(e15a0aaf619d8aa429bd091186fb29a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TopDown 2D RPG BE3/App Icon.png using Guid(e15a0aaf619d8aa429bd091186fb29a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5059026d92274161cbf39656e1589005') in 0.086747 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/TopDown 2D RPG BE3/Readme.asset
+  artifactKey: Guid(4ff280a9fdc784d46beb69b6da783245) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TopDown 2D RPG BE3/Readme.asset using Guid(4ff280a9fdc784d46beb69b6da783245) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74cafbf6cb073390dad7771ae8c2e6c2') in 0.003913 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1026.863319 seconds.
+  path: Assets/TopDown 2D RPG BE3
+  artifactKey: Guid(b572e795b99024b46b23755ad2ccbff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TopDown 2D RPG BE3 using Guid(b572e795b99024b46b23755ad2ccbff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '012621312e0c42e1ccf969eddda156be') in 0.000910 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 137.386480 seconds.
+  path: Assets/New Rule Tile.asset
+  artifactKey: Guid(f7fdc3808660da941bf0b7b42eea8ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Rule Tile.asset using Guid(f7fdc3808660da941bf0b7b42eea8ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a879a190003fab12b455ed67eed9254a') in 0.012846 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 34.493093 seconds.
+  path: Assets/TopDownTiles
+  artifactKey: Guid(f206cf806dffdb440b02cbd64157c68c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TopDownTiles using Guid(f206cf806dffdb440b02cbd64157c68c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '050f7cf46b30067f54d04447bf1767f3') in 0.000604 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 31.082682 seconds.
+  path: Assets/TopDownTiles/Grass.asset
+  artifactKey: Guid(f7fdc3808660da941bf0b7b42eea8ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TopDownTiles/Grass.asset using Guid(f7fdc3808660da941bf0b7b42eea8ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b4e93019d129630a7f6a21a94c345ed') in 0.002629 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 13.036679 seconds.
+  path: Assets/TopDown 2D RPG BE3/Sprites
+  artifactKey: Guid(24208ecbe2041c34db5f5403b9304207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TopDown 2D RPG BE3/Sprites using Guid(24208ecbe2041c34db5f5403b9304207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f604d63e1f19d11ee35a87fa04ed389d') in 0.000582 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.209177 seconds.
+  path: Assets/TopDown 2D RPG BE3/Sprites/NPC.png
+  artifactKey: Guid(2f90eb840bd0cf4438d49759bc08d718) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TopDown 2D RPG BE3/Sprites/NPC.png using Guid(2f90eb840bd0cf4438d49759bc08d718) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b80c3fbd42de87d719b235da3d13783') in 0.049431 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/TopDown 2D RPG BE3/Sprites/Tiles.png
+  artifactKey: Guid(dc747d0a3cdf6594f9f275fdd2a48b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TopDown 2D RPG BE3/Sprites/Tiles.png using Guid(dc747d0a3cdf6594f9f275fdd2a48b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c91fc0d261853f4f935ae65b44a03a0') in 0.300858 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 34
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/TopDown 2D RPG BE3/Sprites/Objects.png
+  artifactKey: Guid(20d6cce5c7ac33b4e97f0f98a09aa347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TopDown 2D RPG BE3/Sprites/Objects.png using Guid(20d6cce5c7ac33b4e97f0f98a09aa347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '295e4bffe5d66134469a75daf818ba46') in 0.112235 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/TopDown 2D RPG BE3/Sprites/Player.png
+  artifactKey: Guid(23748c298f885bf4c89671f6d30f562b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TopDown 2D RPG BE3/Sprites/Player.png using Guid(23748c298f885bf4c89671f6d30f562b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3abba82b82b391cfc8f50faaeb51b587') in 0.086874 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 18
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/TopDown 2D RPG BE3/Sprites/NPC Portrait.png
+  artifactKey: Guid(d79edf18a76e2654a9ac99f15de8b2b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TopDown 2D RPG BE3/Sprites/NPC Portrait.png using Guid(d79edf18a76e2654a9ac99f15de8b2b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '165875ef4931afb35eb6bc3a39526dd9') in 0.060502 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/TopDown 2D RPG BE3/Sprites/User Interface.png
+  artifactKey: Guid(1c9bc0d104c01934da10d4333b9dc48b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TopDown 2D RPG BE3/Sprites/User Interface.png using Guid(1c9bc0d104c01934da10d4333b9dc48b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce713f372e07f76a9559ffb29d338285') in 0.068422 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 228.221651 seconds.
+  path: Assets/TopDownTiles/TopDown.prefab
+  artifactKey: Guid(8c867dd4ec2741848991fc847a51491b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TopDownTiles/TopDown.prefab using Guid(8c867dd4ec2741848991fc847a51491b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b0a36539b5a44daac89448c7f3fd622') in 0.050635 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 1.882070 seconds.
+  path: Assets/TopDownTiles/TopDown.prefab
+  artifactKey: Guid(8c867dd4ec2741848991fc847a51491b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TopDownTiles/TopDown.prefab using Guid(8c867dd4ec2741848991fc847a51491b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1541c89746cea0d45830208384505aa') in 0.015236 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 315.222228 seconds.
+  path: Assets/TopDown 2D RPG BE3/ReadMe/Icon.png
+  artifactKey: Guid(71ded8f6cdc30b14aa6ff9cc311ed0c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TopDown 2D RPG BE3/ReadMe/Icon.png using Guid(71ded8f6cdc30b14aa6ff9cc311ed0c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b96bf7f064ee8539bcbf6e3d681afa9b') in 0.026822 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 15.961472 seconds.
+  path: Assets/TopDownTiles/Grass.asset
+  artifactKey: Guid(f7fdc3808660da941bf0b7b42eea8ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TopDownTiles/Grass.asset using Guid(f7fdc3808660da941bf0b7b42eea8ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a33647e8f7c1ad07a761ffb953f48b0') in 0.031189 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/TopDownTiles/TopDown.prefab
+  artifactKey: Guid(8c867dd4ec2741848991fc847a51491b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TopDownTiles/TopDown.prefab using Guid(8c867dd4ec2741848991fc847a51491b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e750a69e091627cf2fad19d4da08504a') in 0.022525 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/TopDownTiles/Grass 1.asset
+  artifactKey: Guid(3f8b062a7a0c5cc4cad922c5c591e416) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TopDownTiles/Grass 1.asset using Guid(3f8b062a7a0c5cc4cad922c5c591e416) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da03bebbae0b1f8f180d139392aeedcd') in 0.005922 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 15.809166 seconds.
+  path: Assets/TopDownTiles/Watar.asset
+  artifactKey: Guid(3f8b062a7a0c5cc4cad922c5c591e416) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TopDownTiles/Watar.asset using Guid(3f8b062a7a0c5cc4cad922c5c591e416) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '307973866c44b4cc0663c0ad420d7ffb') in 0.007279 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 45.134568 seconds.
+  path: Assets/TopDownTiles/Watar.asset
+  artifactKey: Guid(3f8b062a7a0c5cc4cad922c5c591e416) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TopDownTiles/Watar.asset using Guid(3f8b062a7a0c5cc4cad922c5c591e416) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4d68ab95f5e3bbe4f07672e0e935977') in 0.007186 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 33.997469 seconds.
+  path: Assets/TopDownTiles/TopDown.prefab
+  artifactKey: Guid(8c867dd4ec2741848991fc847a51491b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TopDownTiles/TopDown.prefab using Guid(8c867dd4ec2741848991fc847a51491b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d4ed0b13aa97d5694d0bac8089dec7d') in 0.022312 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Import Request.
+  Time since last request: 14.087879 seconds.
+  path: Assets/TopDownTiles/Grass.asset
+  artifactKey: Guid(f7fdc3808660da941bf0b7b42eea8ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TopDownTiles/Grass.asset using Guid(f7fdc3808660da941bf0b7b42eea8ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b8d86b2137c1dcf8b7ec55c996f6315') in 0.008364 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/TopDownTiles/TopDown.prefab
+  artifactKey: Guid(8c867dd4ec2741848991fc847a51491b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TopDownTiles/TopDown.prefab using Guid(8c867dd4ec2741848991fc847a51491b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cbb30be69e03091487279e70cb0ab2b') in 0.015748 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 26
+========================================================================
+Received Import Request.
+  Time since last request: 61.720251 seconds.
+  path: Assets/TopDownTiles/TopDown.prefab
+  artifactKey: Guid(8c867dd4ec2741848991fc847a51491b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TopDownTiles/TopDown.prefab using Guid(8c867dd4ec2741848991fc847a51491b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7209a3bc47010d22fdd60d0e24da2c12') in 0.020067 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 4.000673 seconds.
+  path: Assets/TopDownTiles/TopDown.prefab
+  artifactKey: Guid(8c867dd4ec2741848991fc847a51491b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TopDownTiles/TopDown.prefab using Guid(8c867dd4ec2741848991fc847a51491b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd9ca63da7f29cbc17a1320cbda83e89') in 0.117996 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 103.312152 seconds.
+  path: Assets/TopDownTiles/TopDown.prefab
+  artifactKey: Guid(8c867dd4ec2741848991fc847a51491b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TopDownTiles/TopDown.prefab using Guid(8c867dd4ec2741848991fc847a51491b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c59dbd3c7d4a5f74f2523a7df0f66be') in 0.012388 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/TopDownTiles/Watara.asset
+  artifactKey: Guid(3f8b062a7a0c5cc4cad922c5c591e416) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TopDownTiles/Watara.asset using Guid(3f8b062a7a0c5cc4cad922c5c591e416) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04ca013808d9e3b9ee5105b5412f2eb4') in 0.010539 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 2.322551 seconds.
+  path: Assets/TopDownTiles/Grasss.asset
+  artifactKey: Guid(f7fdc3808660da941bf0b7b42eea8ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TopDownTiles/Grasss.asset using Guid(f7fdc3808660da941bf0b7b42eea8ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f6f678980745d4af9152ada7f18ede9') in 0.016902 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 4.203110 seconds.
+  path: Assets/TopDownTiles/Water.asset
+  artifactKey: Guid(f7fdc3808660da941bf0b7b42eea8ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TopDownTiles/Water.asset using Guid(f7fdc3808660da941bf0b7b42eea8ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '840728ed674b2f62fe0de8cc1462fa10') in 0.006830 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 6.361387 seconds.
+  path: Assets/TopDownTiles/Grass.asset
+  artifactKey: Guid(3f8b062a7a0c5cc4cad922c5c591e416) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TopDownTiles/Grass.asset using Guid(3f8b062a7a0c5cc4cad922c5c591e416) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df4e763bc4a0403938950f4c3434f0c5') in 0.006753 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/TopDownTiles/TopDown.prefab
+  artifactKey: Guid(8c867dd4ec2741848991fc847a51491b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TopDownTiles/TopDown.prefab using Guid(8c867dd4ec2741848991fc847a51491b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4af1ab7d0d4390986b4b6af4e6c566e4') in 0.011382 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 8.831745 seconds.
+  path: Assets/TopDownTiles/TopDown.prefab
+  artifactKey: Guid(8c867dd4ec2741848991fc847a51491b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TopDownTiles/TopDown.prefab using Guid(8c867dd4ec2741848991fc847a51491b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a78e5e8be943ae6fa64bbf1ddb15436') in 0.023271 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 31
+========================================================================
+Received Import Request.
+  Time since last request: 121.859347 seconds.
+  path: Assets/TopDownTiles/Grass.asset
+  artifactKey: Guid(3f8b062a7a0c5cc4cad922c5c591e416) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TopDownTiles/Grass.asset using Guid(3f8b062a7a0c5cc4cad922c5c591e416) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30302bcd9c9a28431c96469c3a8c8960') in 0.016034 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/TopDownTiles/TopDown.prefab
+  artifactKey: Guid(8c867dd4ec2741848991fc847a51491b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TopDownTiles/TopDown.prefab using Guid(8c867dd4ec2741848991fc847a51491b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b85424ef0b0ad0744d981263f985f93a') in 0.011231 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 31
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/TopDownTiles/Water 1.asset
+  artifactKey: Guid(32ba3839abe51b8499d1a4d661cfd2e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TopDownTiles/Water 1.asset using Guid(32ba3839abe51b8499d1a4d661cfd2e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'baa59b1630bb36c6ba0d805b1b3e25cf') in 0.008042 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 3.987693 seconds.
+  path: Assets/TopDownTiles/Ground.asset
+  artifactKey: Guid(32ba3839abe51b8499d1a4d661cfd2e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TopDownTiles/Ground.asset using Guid(32ba3839abe51b8499d1a4d661cfd2e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '395413ee3fbb3480586ba550ed6a129c') in 0.007086 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 32.396374 seconds.
+  path: Assets/TopDownTiles/TopDown.prefab
+  artifactKey: Guid(8c867dd4ec2741848991fc847a51491b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TopDownTiles/TopDown.prefab using Guid(8c867dd4ec2741848991fc847a51491b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7f43fedfe82a662c369df59ef284cb4') in 0.024660 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 33
+========================================================================
+Received Import Request.
+  Time since last request: 115.940839 seconds.
+  path: Assets/TopDownTiles/Water.prefab
+  artifactKey: Guid(0a3b7d1c54f158848bcf00949b726f41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TopDownTiles/Water.prefab using Guid(0a3b7d1c54f158848bcf00949b726f41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0c3d2f3477ea2cb95f88bc2b4e77456') in 0.018920 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 1.636856 seconds.
+  path: Assets/TopDownTiles/Water.prefab
+  artifactKey: Guid(0a3b7d1c54f158848bcf00949b726f41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TopDownTiles/Water.prefab using Guid(0a3b7d1c54f158848bcf00949b726f41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41ef8eb413fa97dd3bfdb3e61a3bc624') in 0.024282 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
