@@ -9,11 +9,13 @@ public class EnemyMove : MonoBehaviour
     public int nextMove;
     Animator anim;
     SpriteRenderer spriteRenderer;
+    BoxCollider2D boxCollider2; 
     private void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        spriteRenderer = GetComponent<SpriteRenderer>();    
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        boxCollider2 = GetComponent<BoxCollider2D>();
         Invoke("think", 5);
         //think();
     }
@@ -71,5 +73,18 @@ public class EnemyMove : MonoBehaviour
         Invoke("think", 5);
         spriteRenderer.flipX = nextMove == 1;
     }
+    public void OnDameged()
+    {
+       // gameObject.layer = 11;//PlayerDameged·Î Change Layer;
+        spriteRenderer.color = new Color(1, 1, 1, 0.4f);
+        spriteRenderer.flipY = true;
+        boxCollider2.enabled = false;
+        rigid.AddForce(Vector2.up * 5 , ForceMode2D.Impulse);
+        Invoke("DeActive", 5);
 
+    }
+    void DeActive()
+    {
+        gameObject.SetActive(false);
+    }
 }
