@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TopDownPlayer : MonoBehaviour
 {
+    public static int speed;
     float h;
     float v;
     Rigidbody2D rigid;
@@ -14,8 +15,8 @@ public class TopDownPlayer : MonoBehaviour
     }
     private void Update()
     {
-        h = Input.GetAxisRaw("Horizontal");
-        v = Input.GetAxisRaw("Vertical");
+        h = Input.GetAxisRaw("Horizontal") * speed;
+        v = Input.GetAxisRaw("Vertical") * speed;
     }
     void FixedUpdate()
     {
