@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TopDownPlayer : MonoBehaviour
 {
-    public static int speed;
+    public static int speed =5;
     float h;
     float v;
     Rigidbody2D rigid;
