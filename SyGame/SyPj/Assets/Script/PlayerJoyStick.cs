@@ -50,11 +50,13 @@ public class PlayerControllerExample : MonoBehaviour
 
         Vector2 movement = playerInput.Player.Move.ReadValue<Vector2>();
         Vector3 move = new Vector3(movement.x, 0, movement.y);
-        Debug.Log(move.x);
+      
         if (move != Vector3.zero)
         {
-            rigid.velocity = new Vector2(rigid.velocity.normalized.x * 0.5f, rigid.velocity.y);
+            Debug.Log("NOT ZERO" + rigid.velocity.normalized.x);
 
+            rigid.velocity = new Vector2(rigid.velocity.normalized.x * 0.5f, rigid.velocity.y);
+            
             if (move.x < 0)
             {
                 spriteRenderer.flipX = Input.GetAxisRaw("Horizontal") == -1;
@@ -88,10 +90,11 @@ public class PlayerControllerExample : MonoBehaviour
     void FixedUpdate()
     {
         //이동 속도
-        float h = Input.GetAxisRaw("Horizontal");
-
-        rigid.AddForce(Vector2.right * h, ForceMode2D.Impulse);
-
+        // float h = Input.GetAxisRaw("Horizontal");
+        //Debug.Log("www" + h);
+        //rigid.AddForce(Vector2.right * h, ForceMode2D.Impulse);
+        Debug.Log(Vector2.right * rigid.velocity.x);
+        rigid.AddForce(Vector2.right * rigid.velocity.x, ForceMode2D.Impulse);
         //최대 속도
         if (rigid.velocity.x > maxSpeed)//Right
             rigid.velocity = new Vector2(maxSpeed, rigid.velocity.y);
