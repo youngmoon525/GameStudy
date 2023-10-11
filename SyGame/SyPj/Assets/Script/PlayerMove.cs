@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
+
     public float maxSpeed ;
     public float jumpPower ;
     // Start is called before the first frame update
@@ -20,15 +21,24 @@ public class PlayerMove : MonoBehaviour
     public AudioClip audioItem;
     public AudioClip audioDie;
     public AudioClip audioFinish;
+    [SerializeField] private float playerSpeed = 2.0f;
+    [SerializeField] private float jumpHeight = 1.0f;
+    [SerializeField] private float gravityValue = -9.81f;
+
 
     AudioSource audioSrc;
+
+
+    //protected PlayerActionsExample playerInput;
+
     void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         capsuleCollider2 = GetComponent<CapsuleCollider2D>();
-        audioSrc = GetComponent<AudioSource>(); 
+        audioSrc = GetComponent<AudioSource>();
+
     }
 
     //normalized
@@ -36,14 +46,16 @@ public class PlayerMove : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetButtonDown("Jump") && !animator.GetBool("isJumping"))
+   
+
+        if (Input.GetButtonDown("Jump") && !animator.GetBool("isJumping") )
         {
+
             rigid.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
             animator.SetBool("isJumping", true);
             playSound(audioJump);
 
         }
-
 
 
         if (Input.GetButtonUp("Horizontal"))
@@ -61,7 +73,7 @@ public class PlayerMove : MonoBehaviour
                 else
                     animator.SetBool("isWalking", true);*/
 
-        Debug.Log(rigid.velocity.normalized.x);
+        //Debug.Log(rigid.velocity.normalized.x);
         if (Mathf.Abs(rigid.velocity.x) < 0.3)
         {
             animator.SetBool("isWalking", false);

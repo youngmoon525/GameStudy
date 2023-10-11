@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class EnemyMove : MonoBehaviour
 {
+
     Rigidbody2D rigid;
     public int nextMove;
     Animator anim;

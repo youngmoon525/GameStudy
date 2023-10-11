@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     public int totalPoint, stagePoint, stageIndex , health;
     public PlayerMove player;
     public GameObject[] Stages;
-
+    
     // Start is called before the first frame updateW
     public Image[] UIhealth;
     public Text UIPoint;
