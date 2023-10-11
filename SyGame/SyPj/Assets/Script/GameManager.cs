@@ -1,8 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     //public PlayerMove player    public GameObject[] Stages;
@@ -12,8 +12,11 @@ public class GameManager : MonoBehaviour
     public Text UIPoint;
     public Text UIStage;
     public GameObject RestartButton;
-
-
+    
+    public PlayerJoyStick player;
+    public int totalPoint, stagePoint, stageIndex;
+    public GameObject[] Stages;
+    public int health = 3;
     private void Update()
     {
         UIPoint.text = (totalPoint + stagePoint).ToString();
@@ -31,8 +34,8 @@ public class GameManager : MonoBehaviour
         Stages[stageIndex].SetActive(true);
         PlayerReposition();
 
-
-            UIStage.text = "STAGE" + (stageIndex + 1);
+            SceneManager.LoadScene("TopDown");
+           // UIStage.text = "STAGE" + (stageIndex + 1);
         }
         else
         {

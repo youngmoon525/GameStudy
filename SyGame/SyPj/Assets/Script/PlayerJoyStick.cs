@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using System;
-public class PlayerControllerExample : MonoBehaviour
+public class PlayerJoyStick : MonoBehaviour
 {
 
     [SerializeField] private float playerSpeed = 2.0f;
