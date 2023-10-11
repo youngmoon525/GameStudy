@@ -2488,7 +2488,6 @@ GameObject:
   - component: {fileID: 592235630}
   - component: {fileID: 592235631}
   - component: {fileID: 592235633}
-  - component: {fileID: 592235634}
   - component: {fileID: 592235635}
   - component: {fileID: 592235636}
   - component: {fileID: 592235637}
@@ -2615,30 +2614,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &592235634
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 592235628}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2115d03684b229f469a729b52bd94326, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxSpeed: 4.5
-  jumpPower: 20
-  gameManager: {fileID: 2085225393}
-  audioJump: {fileID: 8300000, guid: 2c5292ba5cf254919a6b9e2b18e04f49, type: 3}
-  audioAttack: {fileID: 8300000, guid: d8d04c6f80a1140db85ede568dab1f51, type: 3}
-  audioDameged: {fileID: 8300000, guid: 7e9ee6dc04a5d40d1a5dfc4beb9865e7, type: 3}
-  audioItem: {fileID: 8300000, guid: 79180f511d89441b9aa23ccae1992fe0, type: 3}
-  audioDie: {fileID: 8300000, guid: a0010a1a0c474473b81729eb770c485f, type: 3}
-  audioFinish: {fileID: 8300000, guid: 7478151cf36724a7dada558f746c3633, type: 3}
-  playerSpeed: 2
-  jumpHeight: 1
-  gravityValue: -9.81
 --- !u!70 &592235635
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -2782,8 +2757,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e914694701eb3f44cb72c1445c873f3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpeed: 4.5
-  jumpHeight: 20
+  playerSpeed: 4
+  jumpHeight: 1
   gravityValue: -9.81
   maxSpeed: 0
   jumpPower: 0
@@ -7537,7 +7512,7 @@ MonoBehaviour:
   stagePoint: 0
   stageIndex: 0
   health: 3
-  player: {fileID: 592235634}
+  player: {fileID: 592235637}
   Stages:
   - {fileID: 259572266}
   - {fileID: 1629718671}

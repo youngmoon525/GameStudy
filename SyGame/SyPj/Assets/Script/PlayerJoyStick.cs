@@ -32,7 +32,6 @@ public class PlayerControllerExample : MonoBehaviour
 
 
 
-
     private void Awake()
     {
         playerInput = new PlayerActionsExample();
@@ -46,21 +45,19 @@ public class PlayerControllerExample : MonoBehaviour
     private void Update()
     {
 
-        
+        if(playerInput == null)
+            playerInput = new PlayerActionsExample();
 
         Vector2 movement = playerInput.Player.Move.ReadValue<Vector2>();
-        Vector3 move = new Vector3(movement.x, 0, movement.y);
+        //Vector3 move = new Vector3(movement.x, 0, movement.y);
       
-        if (move != Vector3.zero)
+        if (movement.x != 0)
         {
-            Debug.Log("NOT ZERO" + rigid.velocity.normalized.x);
+            //Debug.Log("NOT ZERO"+maxSpeed  + rigid.velocity.x);
 
-            rigid.velocity = new Vector2(rigid.velocity.normalized.x * 0.5f, rigid.velocity.y);
-            
-            if (move.x < 0)
-            {
-                spriteRenderer.flipX = Input.GetAxisRaw("Horizontal") == -1;
-            }
+            rigid.velocity = new Vector2(rigid.velocity.x * Mathf.Abs(movement.x), rigid.velocity.y);
+            //rigid.AddForce(Vector2.right * rigid.velocity.x, ForceMode2D.Impulse);
+            spriteRenderer.flipX = movement.x < 0;
 
             
         }
@@ -90,11 +87,11 @@ public class PlayerControllerExample : MonoBehaviour
     void FixedUpdate()
     {
         //이동 속도
-        // float h = Input.GetAxisRaw("Horizontal");
+        //float h = maxSpeed; //Input.GetAxisRaw("Horizontal");
         //Debug.Log("www" + h);
         //rigid.AddForce(Vector2.right * h, ForceMode2D.Impulse);
-        Debug.Log(Vector2.right * rigid.velocity.x);
-        rigid.AddForce(Vector2.right * rigid.velocity.x, ForceMode2D.Impulse);
+       // Debug.Log(Vector2.right + " A "  +rigid.velocity.x + " B " + Vector2.right * rigid.velocity.x);
+        rigid.AddForce(Vector2.right *playerInput.Player.Move.ReadValue<Vector2>().x, ForceMode2D.Impulse);
         //최대 속도
         if (rigid.velocity.x > maxSpeed)//Right
             rigid.velocity = new Vector2(maxSpeed, rigid.velocity.y);

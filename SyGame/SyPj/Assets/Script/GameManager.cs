@@ -5,9 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
-    public int totalPoint, stagePoint, stageIndex , health;
-    public PlayerMove player;
-    public GameObject[] Stages;
+    //public PlayerMove player    public GameObject[] Stages;
     
     // Start is called before the first frame updateW
     public Image[] UIhealth;
