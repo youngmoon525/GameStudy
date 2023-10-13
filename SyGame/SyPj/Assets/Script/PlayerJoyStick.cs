@@ -6,10 +6,6 @@ using System;
 public class PlayerJoyStick : MonoBehaviour
 {
 
-    [SerializeField] private float playerSpeed = 2.0f;
-    [SerializeField] private float jumpHeight = 1.0f;
-    [SerializeField] private float gravityValue = -9.81f;
-
     public float maxSpeed;
     public float jumpPower;
     // Start is called before the first frame update
@@ -98,8 +94,10 @@ public class PlayerJoyStick : MonoBehaviour
         else if (rigid.velocity.x < maxSpeed * (-1))//Left
             rigid.velocity = new Vector2(maxSpeed * (-1), rigid.velocity.y);
 
-
-
+        //Vector3 mouseInput = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+       // transform.Translate(Vector3.forward * Time.deltaTime, Space.World);
+        //transform.position = Vector3.MoveTowards(transform.position, mouseInput, maxSpeed * Time.deltaTime);
+       
         //Landing Platform
         //Debug.DrawRay(rigid.position, Vector3.down , new Color(0,1,0));
         if (rigid.velocity.y < 0)

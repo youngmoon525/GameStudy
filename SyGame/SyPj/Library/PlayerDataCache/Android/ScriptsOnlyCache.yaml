@@ -2,8 +2,10 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - EnemyMove
+    - GameMain
     - GameManager
     - PlayerJoyStick
+    - TopDownPlayer
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Animation.Runtime.dll:
@@ -46,7 +48,16 @@ ScriptsOnlyBuild:
     - Unity.PlasticSCM.Editor.PlasticWindow
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    Unity.TextMeshPro:
+    - TMPro.TMP_FontAsset
+    - TMPro.TMP_Settings
+    - TMPro.TMP_SpriteAsset
+    - TMPro.TMP_StyleSheet
     Unity.TextMeshPro.dll:
+    - TMPro.TMP_FontAsset
+    - TMPro.TMP_Settings
+    - TMPro.TMP_SpriteAsset
+    - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
@@ -62,6 +73,7 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
@@ -73,6 +85,8 @@ ScriptsOnlyBuild:
     - VirtualJoystick
     - VirtualJoystickFloating
   serializedClasses:
+    Unity.2D.Tilemap.Extras:
+    - UnityEngine.RuleTile/TilingRule
     Unity.InputSystem:
     - UnityEngine.InputSystem.InputAction
     - UnityEngine.InputSystem.InputActionMap
@@ -80,11 +94,29 @@ ScriptsOnlyBuild:
     - UnityEngine.InputSystem.InputControlScheme
     - UnityEngine.InputSystem.InputControlScheme/DeviceRequirement
     Unity.TextMeshPro:
+    - TMPro.FaceInfo_Legacy
+    - TMPro.FontAssetCreationSettings
+    - TMPro.KerningTable
+    - TMPro.TMP_Character
+    - TMPro.TMP_FontFeatureTable
+    - TMPro.TMP_FontWeightPair
+    - TMPro.TMP_GlyphAdjustmentRecord
+    - TMPro.TMP_GlyphPairAdjustmentRecord
+    - TMPro.TMP_GlyphValueRecord
+    - TMPro.TMP_Sprite
+    - TMPro.TMP_SpriteCharacter
+    - TMPro.TMP_SpriteGlyph
+    - TMPro.TMP_Style
     - TMPro.VertexGradient
     UnityEngine.CoreModule:
     - UnityEngine.Events.ArgumentCache
     - UnityEngine.Events.PersistentCallGroup
     - UnityEngine.Events.PersistentListenerMode
+    UnityEngine.TextCoreFontEngineModule:
+    - UnityEngine.TextCore.FaceInfo
+    - UnityEngine.TextCore.Glyph
+    - UnityEngine.TextCore.GlyphMetrics
+    - UnityEngine.TextCore.GlyphRect
     UnityEngine.UI:
     - UnityEngine.UI.AnimationTriggers
     - UnityEngine.UI.Button/ButtonClickedEvent
@@ -95,10 +127,13 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.SpriteState
   methodsToPreserve:
   - assembly: Assembly-CSharp
+    fullTypeName: GameMain
+    methodName: onGameStart
+  - assembly: Assembly-CSharp
     fullTypeName: GameManager
     methodName: Restart
   sceneClasses:
-    Assets/Scenes/SampleScene.unity:
+    Assets/Scenes/2DPlatt.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -148,6 +183,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 19502}
     - Class: 114
+      Script: {instanceID: 21400}
+    - Class: 114
       Script: {instanceID: 21760}
     - Class: 114
       Script: {instanceID: 22160}
@@ -166,13 +203,153 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 25738}
     - Class: 114
-      Script: {instanceID: 25754}
+      Script: {instanceID: 25750}
     - Class: 114
-      Script: {instanceID: 25766}
+      Script: {instanceID: 25762}
     - Class: 114
-      Script: {instanceID: 25774}
+      Script: {instanceID: 25770}
     - Class: 114
-      Script: {instanceID: 25790}
+      Script: {instanceID: 25786}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 225
+      Script: {instanceID: 0}
+    - Class: 19719996
+      Script: {instanceID: 0}
+    - Class: 156049354
+      Script: {instanceID: 0}
+    - Class: 483693784
+      Script: {instanceID: 0}
+    - Class: 1839735485
+      Script: {instanceID: 0}
+    Assets/Scenes/MainScreen.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 16670}
+    - Class: 114
+      Script: {instanceID: 17444}
+    - Class: 114
+      Script: {instanceID: 18028}
+    - Class: 114
+      Script: {instanceID: 18288}
+    - Class: 114
+      Script: {instanceID: 18666}
+    - Class: 114
+      Script: {instanceID: 20074}
+    - Class: 114
+      Script: {instanceID: 20418}
+    - Class: 114
+      Script: {instanceID: 21400}
+    - Class: 114
+      Script: {instanceID: 22160}
+    - Class: 114
+      Script: {instanceID: 22392}
+    - Class: 114
+      Script: {instanceID: 22832}
+    - Class: 114
+      Script: {instanceID: 29284}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/TopDown.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 66
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 16670}
+    - Class: 114
+      Script: {instanceID: 18028}
+    - Class: 114
+      Script: {instanceID: 18288}
+    - Class: 114
+      Script: {instanceID: 18580}
+    - Class: 114
+      Script: {instanceID: 19502}
+    - Class: 114
+      Script: {instanceID: 21400}
+    - Class: 114
+      Script: {instanceID: 22160}
+    - Class: 114
+      Script: {instanceID: 22392}
+    - Class: 114
+      Script: {instanceID: 23344}
+    - Class: 114
+      Script: {instanceID: 23534}
+    - Class: 114
+      Script: {instanceID: 24290}
+    - Class: 114
+      Script: {instanceID: 25710}
+    - Class: 114
+      Script: {instanceID: 25738}
+    - Class: 114
+      Script: {instanceID: 25770}
+    - Class: 114
+      Script: {instanceID: 25782}
+    - Class: 114
+      Script: {instanceID: 25786}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1440,7 +1617,7 @@ ScriptsOnlyBuild:
     className: BasicCameraFollow
   - hash:
       serializedVersion: 2
-      Hash: 2cbf7ce2011d8b0ab34097f195dcef11
+      Hash: 1d87e76f7974261c474647121fde7f09
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PlayerJoyStick
@@ -1468,7 +1645,15 @@ ScriptsOnlyBuild:
     assemblyName: VirtualButtonsScripts
     namespaceName: 
     className: VirtualButton
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: GameMain
   platform: 13
   scenePathNames:
-  - Assets/Scenes/SampleScene.unity
+  - Assets/Scenes/MainScreen.unity
+  - Assets/Scenes/2DPlatt.unity
+  - Assets/Scenes/TopDown.unity
   playerPath: D:/test.apk
