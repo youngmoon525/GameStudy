@@ -169,47 +169,47 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 636}
+      Script: {instanceID: 640}
     - Class: 114
-      Script: {instanceID: 16670}
+      Script: {instanceID: 16672}
     - Class: 114
-      Script: {instanceID: 18028}
+      Script: {instanceID: 18034}
     - Class: 114
-      Script: {instanceID: 18288}
+      Script: {instanceID: 18296}
     - Class: 114
-      Script: {instanceID: 18580}
+      Script: {instanceID: 18588}
     - Class: 114
-      Script: {instanceID: 18666}
+      Script: {instanceID: 18674}
     - Class: 114
-      Script: {instanceID: 19502}
+      Script: {instanceID: 19520}
     - Class: 114
-      Script: {instanceID: 21400}
+      Script: {instanceID: 20980}
     - Class: 114
-      Script: {instanceID: 21760}
+      Script: {instanceID: 21430}
     - Class: 114
-      Script: {instanceID: 22160}
+      Script: {instanceID: 21486}
     - Class: 114
-      Script: {instanceID: 22392}
+      Script: {instanceID: 21558}
     - Class: 114
-      Script: {instanceID: 23344}
+      Script: {instanceID: 21738}
     - Class: 114
-      Script: {instanceID: 24290}
+      Script: {instanceID: 21796}
     - Class: 114
-      Script: {instanceID: 24670}
+      Script: {instanceID: 22198}
     - Class: 114
-      Script: {instanceID: 25710}
+      Script: {instanceID: 22430}
     - Class: 114
-      Script: {instanceID: 25730}
+      Script: {instanceID: 23292}
     - Class: 114
-      Script: {instanceID: 25738}
+      Script: {instanceID: 23384}
     - Class: 114
-      Script: {instanceID: 25750}
+      Script: {instanceID: 24332}
     - Class: 114
-      Script: {instanceID: 25762}
+      Script: {instanceID: 24472}
     - Class: 114
-      Script: {instanceID: 25770}
+      Script: {instanceID: 24714}
     - Class: 114
-      Script: {instanceID: 25786}
+      Script: {instanceID: 25124}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -258,29 +258,29 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16670}
+      Script: {instanceID: 16672}
     - Class: 114
-      Script: {instanceID: 17444}
+      Script: {instanceID: 17448}
     - Class: 114
-      Script: {instanceID: 18028}
+      Script: {instanceID: 18034}
     - Class: 114
-      Script: {instanceID: 18288}
+      Script: {instanceID: 18296}
     - Class: 114
-      Script: {instanceID: 18666}
+      Script: {instanceID: 18674}
     - Class: 114
-      Script: {instanceID: 20074}
+      Script: {instanceID: 20094}
     - Class: 114
-      Script: {instanceID: 20418}
+      Script: {instanceID: 20440}
     - Class: 114
-      Script: {instanceID: 21400}
+      Script: {instanceID: 21430}
     - Class: 114
-      Script: {instanceID: 22160}
+      Script: {instanceID: 22198}
     - Class: 114
-      Script: {instanceID: 22392}
+      Script: {instanceID: 22430}
     - Class: 114
-      Script: {instanceID: 22832}
+      Script: {instanceID: 22870}
     - Class: 114
-      Script: {instanceID: 29284}
+      Script: {instanceID: 25468}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -312,6 +312,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 50
       Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
     - Class: 66
       Script: {instanceID: 0}
     - Class: 81
@@ -319,37 +321,39 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16670}
+      Script: {instanceID: 16672}
     - Class: 114
-      Script: {instanceID: 18028}
+      Script: {instanceID: 18034}
     - Class: 114
-      Script: {instanceID: 18288}
+      Script: {instanceID: 18296}
     - Class: 114
-      Script: {instanceID: 18580}
+      Script: {instanceID: 18588}
     - Class: 114
-      Script: {instanceID: 19502}
+      Script: {instanceID: 18732}
     - Class: 114
-      Script: {instanceID: 21400}
+      Script: {instanceID: 19520}
     - Class: 114
-      Script: {instanceID: 22160}
+      Script: {instanceID: 21430}
     - Class: 114
-      Script: {instanceID: 22392}
+      Script: {instanceID: 21558}
     - Class: 114
-      Script: {instanceID: 23344}
+      Script: {instanceID: 21738}
     - Class: 114
-      Script: {instanceID: 23534}
+      Script: {instanceID: 22198}
     - Class: 114
-      Script: {instanceID: 24290}
+      Script: {instanceID: 22430}
     - Class: 114
-      Script: {instanceID: 25710}
+      Script: {instanceID: 23292}
     - Class: 114
-      Script: {instanceID: 25738}
+      Script: {instanceID: 23384}
     - Class: 114
-      Script: {instanceID: 25770}
+      Script: {instanceID: 23574}
     - Class: 114
-      Script: {instanceID: 25782}
+      Script: {instanceID: 24332}
     - Class: 114
-      Script: {instanceID: 25786}
+      Script: {instanceID: 24472}
+    - Class: 114
+      Script: {instanceID: 24714}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -463,6 +467,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnTriggerEnterMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 3a36ed1dbf68386161ed68b86536ce95
+    assemblyName: Unity.2D.PixelPerfect.Samples
+    namespaceName: 
+    className: CameraManager
   - hash:
       serializedVersion: 2
       Hash: 63815508dfd6cf329d5c593ac8e76888
@@ -670,6 +680,12 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: TopDownPlayer
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnInputFieldValueChangedMessageListener
@@ -741,6 +757,12 @@ ScriptsOnlyBuild:
     className: BaseInput
   - hash:
       serializedVersion: 2
+      Hash: afaf063784b7d76ad85acd3d8b54a9d0
+    assemblyName: Unity.2D.PixelPerfect.Samples
+    namespaceName: UnityEngine
+    className: RuleTile
+  - hash:
+      serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -763,6 +785,24 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnCollisionExit2DMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 6a356b04c25c0bb008c1b24bf8b0f996
+    assemblyName: Unity.2D.PixelPerfect.Samples
+    namespaceName: 
+    className: CustomCanvasScaler
+  - hash:
+      serializedVersion: 2
+      Hash: f49b1111a7687b78780ff320f2624de3
+    assemblyName: Unity.2D.PixelPerfect.Samples
+    namespaceName: 
+    className: BasicCameraFollow
+  - hash:
+      serializedVersion: 2
+      Hash: 42e742e2699e70e27da7870a4573993f
+    assemblyName: Unity.2D.PixelPerfect.Samples
+    namespaceName: 
+    className: Hero
   - hash:
       serializedVersion: 2
       Hash: a9340df851e094f0e1a209d8b81aaedc
@@ -835,6 +875,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.InputSystem
     namespaceName: UnityEngine.InputSystem.UI
     className: TrackedDeviceRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: b232879cf2f060b6537826f094963269
+    assemblyName: Unity.2D.PixelPerfect.Samples
+    namespaceName: 
+    className: HeroMover
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -981,6 +1027,12 @@ ScriptsOnlyBuild:
     className: RemoteInputPlayerConnection
   - hash:
       serializedVersion: 2
+      Hash: 813c6ee1fbf02447141ffb494781541c
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: GameManager
+  - hash:
+      serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -1041,6 +1093,12 @@ ScriptsOnlyBuild:
     className: CCDSolver2D
   - hash:
       serializedVersion: 2
+      Hash: e4c654f2c22e97586651b87d4668f2fe
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ReadmeBE3
+  - hash:
+      serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -1077,6 +1135,18 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
+      Hash: 1d87e76f7974261c474647121fde7f09
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PlayerJoyStick
+  - hash:
+      serializedVersion: 2
+      Hash: facbbb9e39b78697f0b955d83ce54fc6
+    assemblyName: VirtualButtonsScripts
+    namespaceName: 
+    className: VirtualJoystick
+  - hash:
+      serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -1101,6 +1171,12 @@ ScriptsOnlyBuild:
     className: SpriteSkinUpdateHelper
   - hash:
       serializedVersion: 2
+      Hash: 47ff1d96f83a6582f25e07b951e71e30
+    assemblyName: VirtualButtonsScripts
+    namespaceName: 
+    className: VirtualJoystickFloating
+  - hash:
+      serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -1111,6 +1187,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: Text
+  - hash:
+      serializedVersion: 2
+      Hash: c749dd7c15d275dba73d9f879315a0f0
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PlayerMove
   - hash:
       serializedVersion: 2
       Hash: 654cebef8aa88cb6cd0504505364d614
@@ -1245,6 +1327,12 @@ ScriptsOnlyBuild:
     className: DownloadableSample
   - hash:
       serializedVersion: 2
+      Hash: 3258ee91982dc81315e013aa65f1085b
+    assemblyName: VirtualButtonsScripts
+    namespaceName: 
+    className: VirtualDPad
+  - hash:
+      serializedVersion: 2
       Hash: a80737d727a1b0096e93ca948844ce4b
     assemblyName: Unity.2D.Tilemap.Extras
     namespaceName: UnityEngine
@@ -1297,6 +1385,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.Tilemap.Extras
     namespaceName: UnityEngine
     className: RuleTile
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Player
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -1425,6 +1519,12 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
+      Hash: 54c0b72f4b3b5c148d5e2b0c567be012
+    assemblyName: VirtualButtonsScripts
+    namespaceName: 
+    className: VirtualButton
+  - hash:
+      serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -1491,6 +1591,12 @@ ScriptsOnlyBuild:
     className: SpriteLibrarySourceAsset
   - hash:
       serializedVersion: 2
+      Hash: 5316fe46f484504bb1ffcdbee3e5d652
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: EnemyMove
+  - hash:
+      serializedVersion: 2
       Hash: afe1800287c9574079eab3fea2622416
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
@@ -1543,108 +1649,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: facbbb9e39b78697f0b955d83ce54fc6
-    assemblyName: VirtualButtonsScripts
-    namespaceName: 
-    className: VirtualJoystick
-  - hash:
-      serializedVersion: 2
-      Hash: 42e742e2699e70e27da7870a4573993f
-    assemblyName: Unity.2D.PixelPerfect.Samples
-    namespaceName: 
-    className: Hero
-  - hash:
-      serializedVersion: 2
-      Hash: b232879cf2f060b6537826f094963269
-    assemblyName: Unity.2D.PixelPerfect.Samples
-    namespaceName: 
-    className: HeroMover
-  - hash:
-      serializedVersion: 2
-      Hash: c749dd7c15d275dba73d9f879315a0f0
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: PlayerMove
-  - hash:
-      serializedVersion: 2
-      Hash: 751e5bae2a317288c2ab58d66687092b
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: Player
-  - hash:
-      serializedVersion: 2
-      Hash: 5316fe46f484504bb1ffcdbee3e5d652
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: EnemyMove
-  - hash:
-      serializedVersion: 2
-      Hash: 3a36ed1dbf68386161ed68b86536ce95
-    assemblyName: Unity.2D.PixelPerfect.Samples
-    namespaceName: 
-    className: CameraManager
-  - hash:
-      serializedVersion: 2
-      Hash: 47ff1d96f83a6582f25e07b951e71e30
-    assemblyName: VirtualButtonsScripts
-    namespaceName: 
-    className: VirtualJoystickFloating
-  - hash:
-      serializedVersion: 2
-      Hash: e4c654f2c22e97586651b87d4668f2fe
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: ReadmeBE3
-  - hash:
-      serializedVersion: 2
-      Hash: 813c6ee1fbf02447141ffb494781541c
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: GameManager
-  - hash:
-      serializedVersion: 2
-      Hash: afaf063784b7d76ad85acd3d8b54a9d0
-    assemblyName: Unity.2D.PixelPerfect.Samples
-    namespaceName: UnityEngine
-    className: RuleTile
-  - hash:
-      serializedVersion: 2
-      Hash: f49b1111a7687b78780ff320f2624de3
-    assemblyName: Unity.2D.PixelPerfect.Samples
-    namespaceName: 
-    className: BasicCameraFollow
-  - hash:
-      serializedVersion: 2
-      Hash: 1d87e76f7974261c474647121fde7f09
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: PlayerJoyStick
-  - hash:
-      serializedVersion: 2
-      Hash: 3258ee91982dc81315e013aa65f1085b
-    assemblyName: VirtualButtonsScripts
-    namespaceName: 
-    className: VirtualDPad
-  - hash:
-      serializedVersion: 2
-      Hash: 6a356b04c25c0bb008c1b24bf8b0f996
-    assemblyName: Unity.2D.PixelPerfect.Samples
-    namespaceName: 
-    className: CustomCanvasScaler
-  - hash:
-      serializedVersion: 2
-      Hash: 751e5bae2a317288c2ab58d66687092b
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: TopDownPlayer
-  - hash:
-      serializedVersion: 2
-      Hash: 54c0b72f4b3b5c148d5e2b0c567be012
-    assemblyName: VirtualButtonsScripts
-    namespaceName: 
-    className: VirtualButton
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b

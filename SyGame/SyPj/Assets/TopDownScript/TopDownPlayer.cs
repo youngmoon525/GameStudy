@@ -9,7 +9,9 @@ public class TopDownPlayer : MonoBehaviour
     float v;
     Rigidbody2D rigid;
     bool isHorizonMove;
-
+    GameObject scanObject;
+    Vector2 dirVec;
+    Animator anim;
 
     PlayerActionsExample playerInput;
 
@@ -17,6 +19,7 @@ public class TopDownPlayer : MonoBehaviour
     {
         rigid = GetComponent<Rigidbody2D>();
         playerInput = new PlayerActionsExample();
+        anim = GetComponent<Animator>();
     }
     private void Update()
     {
@@ -25,13 +28,45 @@ public class TopDownPlayer : MonoBehaviour
         if (playerInput == null)
             playerInput = new PlayerActionsExample();
         Vector2 movement = playerInput.Player.Move.ReadValue<Vector2>();
-        Debug.Log("x" + movement.x + " y" + movement.y);
-       
-         //   isHorizonMove = true;
-            h = movement.x;
-         //   isHorizonMove = false;
-            v = movement.y;
-  
+
+        h = movement.x;
+        v = movement.y;
+
+        if (Mathf.Abs(h) == 1)
+        {
+            isHorizonMove = true;
+        }
+        else
+        {
+            isHorizonMove = false;
+        }
+        if (anim.GetInteger("hAxisRaw") != h)
+        {
+            anim.SetInteger("hAxisRaw", (int)h);
+        }
+        else if (anim.GetInteger("vAxisRaw") != v)
+        {
+            anim.SetInteger("vAxisRaw", (int)v);
+        }
+
+
+        //레이 관련
+        if (v == 1)
+        {
+            dirVec = Vector2.up;
+        }
+        else if (v == -1)
+        {
+            dirVec = Vector2.down;
+        }
+        else if (h == -1)
+        {
+            dirVec = Vector2.left;
+        }
+        else if (h == 1)
+        {
+            dirVec = Vector2.right;
+        }
 
 
 
@@ -50,14 +85,29 @@ public class TopDownPlayer : MonoBehaviour
              else if (vDown || hUp)
                  isHorizonMove = false;*/
 
-
-
+        bool jumpPress = playerInput.Player.Jump.triggered || playerInput.Player.Jump.IsPressed();
+        if (jumpPress && scanObject != null)
+        {
+            Debug.Log(scanObject.name);
+            scanObject.transform.position.Set(10, 20, 0);
+        }
     }
     void FixedUpdate()
     {
-         Debug.Log("x" + h + " y" + v);
-        Vector2 moveVec = new Vector2(h, v);// isHorizonMove ? new Vector2(h, v) : new Vector2(0, v);
+      //   Debug.Log("x" + h + " y" + v);
+        Vector2 moveVec = isHorizonMove ? new Vector2(h, v) : new Vector2(0, v);
         rigid.velocity = moveVec * speed;
+
+        Debug.DrawLine(rigid.position, dirVec * 0.7f, new Color(1, 0, 0));
+        RaycastHit2D rayHit = Physics2D.Raycast(rigid.position, dirVec, 0.7f, LayerMask.GetMask("TopObject"));
+        if(rayHit.collider != null)
+        {
+            scanObject = rayHit.collider.gameObject;
+        }
+        else
+        {
+            scanObject = null;
+        }
     }
 
 
