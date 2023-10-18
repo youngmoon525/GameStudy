@@ -4,6 +4,7 @@ ScriptsOnlyBuild:
     - EnemyMove
     - GameMain
     - GameManager
+    - GameManagerScript
     - PlayerJoyStick
     - TopDownPlayer
     Unity.2D.Animation.Editor.dll:
@@ -169,47 +170,47 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 640}
+      Script: {instanceID: 644}
     - Class: 114
-      Script: {instanceID: 16672}
+      Script: {instanceID: 16676}
     - Class: 114
-      Script: {instanceID: 18034}
+      Script: {instanceID: 18038}
     - Class: 114
-      Script: {instanceID: 18296}
+      Script: {instanceID: 18300}
     - Class: 114
-      Script: {instanceID: 18588}
+      Script: {instanceID: 18592}
     - Class: 114
-      Script: {instanceID: 18674}
+      Script: {instanceID: 18678}
     - Class: 114
-      Script: {instanceID: 19520}
+      Script: {instanceID: 19524}
     - Class: 114
-      Script: {instanceID: 20980}
+      Script: {instanceID: 20984}
     - Class: 114
-      Script: {instanceID: 21432}
+      Script: {instanceID: 21436}
     - Class: 114
-      Script: {instanceID: 21488}
+      Script: {instanceID: 21492}
     - Class: 114
-      Script: {instanceID: 21560}
+      Script: {instanceID: 21564}
     - Class: 114
-      Script: {instanceID: 21740}
+      Script: {instanceID: 21744}
     - Class: 114
-      Script: {instanceID: 21798}
+      Script: {instanceID: 21802}
     - Class: 114
-      Script: {instanceID: 22200}
+      Script: {instanceID: 22204}
     - Class: 114
-      Script: {instanceID: 22432}
+      Script: {instanceID: 22436}
     - Class: 114
-      Script: {instanceID: 23294}
+      Script: {instanceID: 23298}
     - Class: 114
-      Script: {instanceID: 23386}
+      Script: {instanceID: 23390}
     - Class: 114
-      Script: {instanceID: 24334}
+      Script: {instanceID: 24338}
     - Class: 114
-      Script: {instanceID: 24474}
+      Script: {instanceID: 24478}
     - Class: 114
-      Script: {instanceID: 24716}
+      Script: {instanceID: 24720}
     - Class: 114
-      Script: {instanceID: 25126}
+      Script: {instanceID: 25130}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -258,29 +259,29 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16672}
+      Script: {instanceID: 16676}
     - Class: 114
-      Script: {instanceID: 17448}
+      Script: {instanceID: 17452}
     - Class: 114
-      Script: {instanceID: 18034}
+      Script: {instanceID: 18038}
     - Class: 114
-      Script: {instanceID: 18296}
+      Script: {instanceID: 18300}
     - Class: 114
-      Script: {instanceID: 18674}
+      Script: {instanceID: 18678}
     - Class: 114
-      Script: {instanceID: 20094}
+      Script: {instanceID: 20098}
     - Class: 114
-      Script: {instanceID: 20440}
+      Script: {instanceID: 20444}
     - Class: 114
-      Script: {instanceID: 21164}
+      Script: {instanceID: 21168}
     - Class: 114
-      Script: {instanceID: 21432}
+      Script: {instanceID: 21436}
     - Class: 114
-      Script: {instanceID: 22200}
+      Script: {instanceID: 22204}
     - Class: 114
-      Script: {instanceID: 22432}
+      Script: {instanceID: 22436}
     - Class: 114
-      Script: {instanceID: 22872}
+      Script: {instanceID: 22876}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -327,39 +328,41 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16672}
+      Script: {instanceID: 16676}
     - Class: 114
-      Script: {instanceID: 18034}
+      Script: {instanceID: 18038}
     - Class: 114
-      Script: {instanceID: 18296}
+      Script: {instanceID: 18300}
     - Class: 114
-      Script: {instanceID: 18588}
+      Script: {instanceID: 18592}
     - Class: 114
-      Script: {instanceID: 18732}
+      Script: {instanceID: 18736}
     - Class: 114
-      Script: {instanceID: 19520}
+      Script: {instanceID: 19524}
     - Class: 114
-      Script: {instanceID: 21432}
+      Script: {instanceID: 21436}
     - Class: 114
-      Script: {instanceID: 21560}
+      Script: {instanceID: 21564}
     - Class: 114
-      Script: {instanceID: 21740}
+      Script: {instanceID: 21744}
     - Class: 114
-      Script: {instanceID: 22200}
+      Script: {instanceID: 22204}
     - Class: 114
-      Script: {instanceID: 22432}
+      Script: {instanceID: 22436}
     - Class: 114
-      Script: {instanceID: 23294}
+      Script: {instanceID: 23298}
     - Class: 114
-      Script: {instanceID: 23386}
+      Script: {instanceID: 23390}
     - Class: 114
-      Script: {instanceID: 23576}
+      Script: {instanceID: 23580}
     - Class: 114
-      Script: {instanceID: 24334}
+      Script: {instanceID: 24338}
     - Class: 114
-      Script: {instanceID: 24474}
+      Script: {instanceID: 24478}
     - Class: 114
-      Script: {instanceID: 24716}
+      Script: {instanceID: 24720}
+    - Class: 114
+      Script: {instanceID: 27288}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -685,7 +688,7 @@ ScriptsOnlyBuild:
     className: Button
   - hash:
       serializedVersion: 2
-      Hash: 751e5bae2a317288c2ab58d66687092b
+      Hash: 006ea650483aae518776d0d5ae649f73
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: TopDownPlayer
@@ -1661,6 +1664,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 90a8bef7632a80d33717d1a69c0ebdfe
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: GameManagerScript
   platform: 13
   scenePathNames:
   - Assets/Scenes/MainScreen.unity

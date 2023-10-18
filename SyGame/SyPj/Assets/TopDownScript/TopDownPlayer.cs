@@ -5,6 +5,7 @@ using UnityEngine;
 public class TopDownPlayer : MonoBehaviour
 {
     public static int speed =5;
+    public GameManagerScript gameManager;
     float h;
     float v;
     Rigidbody2D rigid;
@@ -29,8 +30,8 @@ public class TopDownPlayer : MonoBehaviour
             playerInput = new PlayerActionsExample();
         Vector2 movement = playerInput.Player.Move.ReadValue<Vector2>();
 
-        h = movement.x;
-        v = movement.y;
+        h = gameManager.isAction ? 0 : movement.x;
+        v = gameManager.isAction ? 0 : movement.y;
 
         if (Mathf.Abs(h) == 1)
         {
@@ -86,10 +87,9 @@ public class TopDownPlayer : MonoBehaviour
                  isHorizonMove = false;*/
 
         bool jumpPress = playerInput.Player.Jump.triggered || playerInput.Player.Jump.IsPressed();
-        if (jumpPress && scanObject != null)
+        if (jumpPress && scanObject != null && !gameManager.isAction)
         {
-            Debug.Log(scanObject.name);
-            scanObject.transform.position.Set(10, 20, 0);
+            gameManager.Action(scanObject);
         }
     }
     void FixedUpdate()
