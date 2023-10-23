@@ -331,6 +331,8 @@
 "Assets/Script/PlayerMove.cs"
 "Assets/TopDown 2D RPG BE3/ReadMe/Scripts/ReadmeBE3.cs"
 "Assets/TopDownScript/GameManagerScript.cs"
+"Assets/TopDownScript/ObjData.cs"
+"Assets/TopDownScript/TalkManager.cs"
 "Assets/TopDownScript/TopDownPlayer.cs"
 -langversion:9.0
 

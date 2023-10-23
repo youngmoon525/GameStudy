@@ -16,6 +16,8 @@ public class TopDownPlayer : MonoBehaviour
 
     PlayerActionsExample playerInput;
 
+    bool isJunmping;
+
     private void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
@@ -84,11 +86,14 @@ public class TopDownPlayer : MonoBehaviour
              if (hDown || vUp)
                  isHorizonMove = true;
              else if (vDown || hUp)
+
                  isHorizonMove = false;*/
 
-        bool jumpPress = playerInput.Player.Jump.triggered || playerInput.Player.Jump.IsPressed();
-        if (jumpPress && scanObject != null && !gameManager.isAction)
+        // Debug.Log(playerInput.Player.Jump.triggered + " : " + playerInput.Player.Jump.IsPressed());
+        bool jumpPress = playerInput.Player.Jump.triggered;//|| playerInput.Player.Jump.IsPressed();
+        if (jumpPress && scanObject != null && jumpPress )
         {
+          //  isJunmping = jumpPress;
             gameManager.Action(scanObject);
         }
     }

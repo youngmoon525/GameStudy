@@ -5,7 +5,9 @@ ScriptsOnlyBuild:
     - GameMain
     - GameManager
     - GameManagerScript
+    - ObjData
     - PlayerJoyStick
+    - TalkManager
     - TopDownPlayer
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
@@ -63,10 +65,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -170,47 +170,47 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 644}
+      Script: {instanceID: 640}
     - Class: 114
-      Script: {instanceID: 16676}
+      Script: {instanceID: 16672}
     - Class: 114
-      Script: {instanceID: 18038}
+      Script: {instanceID: 18034}
     - Class: 114
-      Script: {instanceID: 18300}
+      Script: {instanceID: 18296}
     - Class: 114
-      Script: {instanceID: 18592}
+      Script: {instanceID: 18588}
     - Class: 114
-      Script: {instanceID: 18678}
+      Script: {instanceID: 18674}
     - Class: 114
-      Script: {instanceID: 19524}
+      Script: {instanceID: 19520}
     - Class: 114
-      Script: {instanceID: 20984}
+      Script: {instanceID: 20980}
     - Class: 114
-      Script: {instanceID: 21436}
+      Script: {instanceID: 21432}
     - Class: 114
-      Script: {instanceID: 21492}
+      Script: {instanceID: 21488}
     - Class: 114
-      Script: {instanceID: 21564}
+      Script: {instanceID: 21560}
     - Class: 114
-      Script: {instanceID: 21744}
+      Script: {instanceID: 21740}
     - Class: 114
-      Script: {instanceID: 21802}
+      Script: {instanceID: 21798}
     - Class: 114
-      Script: {instanceID: 22204}
+      Script: {instanceID: 22200}
     - Class: 114
-      Script: {instanceID: 22436}
+      Script: {instanceID: 22432}
     - Class: 114
-      Script: {instanceID: 23298}
+      Script: {instanceID: 23294}
     - Class: 114
-      Script: {instanceID: 23390}
+      Script: {instanceID: 23386}
     - Class: 114
-      Script: {instanceID: 24338}
+      Script: {instanceID: 24334}
     - Class: 114
-      Script: {instanceID: 24478}
+      Script: {instanceID: 24474}
     - Class: 114
-      Script: {instanceID: 24720}
+      Script: {instanceID: 24716}
     - Class: 114
-      Script: {instanceID: 25130}
+      Script: {instanceID: 25128}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -259,29 +259,29 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16676}
+      Script: {instanceID: 16672}
     - Class: 114
-      Script: {instanceID: 17452}
+      Script: {instanceID: 17448}
     - Class: 114
-      Script: {instanceID: 18038}
+      Script: {instanceID: 18034}
     - Class: 114
-      Script: {instanceID: 18300}
+      Script: {instanceID: 18296}
     - Class: 114
-      Script: {instanceID: 18678}
+      Script: {instanceID: 18674}
     - Class: 114
-      Script: {instanceID: 20098}
+      Script: {instanceID: 20094}
     - Class: 114
-      Script: {instanceID: 20444}
+      Script: {instanceID: 20440}
     - Class: 114
-      Script: {instanceID: 21168}
+      Script: {instanceID: 21164}
     - Class: 114
-      Script: {instanceID: 21436}
+      Script: {instanceID: 21432}
     - Class: 114
-      Script: {instanceID: 22204}
+      Script: {instanceID: 22200}
     - Class: 114
-      Script: {instanceID: 22436}
+      Script: {instanceID: 22432}
     - Class: 114
-      Script: {instanceID: 22876}
+      Script: {instanceID: 22872}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -328,41 +328,45 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16676}
+      Script: {instanceID: 16672}
     - Class: 114
-      Script: {instanceID: 18038}
+      Script: {instanceID: 18034}
     - Class: 114
-      Script: {instanceID: 18300}
+      Script: {instanceID: 18296}
     - Class: 114
-      Script: {instanceID: 18592}
+      Script: {instanceID: 18588}
     - Class: 114
-      Script: {instanceID: 18736}
+      Script: {instanceID: 18732}
     - Class: 114
-      Script: {instanceID: 19524}
+      Script: {instanceID: 19520}
     - Class: 114
-      Script: {instanceID: 21436}
+      Script: {instanceID: 21432}
     - Class: 114
-      Script: {instanceID: 21564}
+      Script: {instanceID: 21560}
     - Class: 114
-      Script: {instanceID: 21744}
+      Script: {instanceID: 21740}
     - Class: 114
-      Script: {instanceID: 22204}
+      Script: {instanceID: 22200}
     - Class: 114
-      Script: {instanceID: 22436}
+      Script: {instanceID: 22432}
     - Class: 114
-      Script: {instanceID: 23298}
+      Script: {instanceID: 23294}
     - Class: 114
-      Script: {instanceID: 23390}
+      Script: {instanceID: 23386}
     - Class: 114
-      Script: {instanceID: 23580}
+      Script: {instanceID: 23576}
     - Class: 114
-      Script: {instanceID: 24338}
+      Script: {instanceID: 24334}
     - Class: 114
-      Script: {instanceID: 24478}
+      Script: {instanceID: 24474}
     - Class: 114
-      Script: {instanceID: 24720}
+      Script: {instanceID: 24716}
     - Class: 114
-      Script: {instanceID: 27288}
+      Script: {instanceID: 25034}
+    - Class: 114
+      Script: {instanceID: 29886}
+    - Class: 114
+      Script: {instanceID: 31322}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1606,6 +1610,12 @@ ScriptsOnlyBuild:
     className: SpriteLibrarySourceAsset
   - hash:
       serializedVersion: 2
+      Hash: a062569c013440a5c2a449e639bda01c
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: GameManagerScript
+  - hash:
+      serializedVersion: 2
       Hash: 5316fe46f484504bb1ffcdbee3e5d652
     assemblyName: Assembly-CSharp
     namespaceName: 
@@ -1666,10 +1676,16 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 90a8bef7632a80d33717d1a69c0ebdfe
+      Hash: c013b9992c24b5c7b9a9e2c100b3c90e
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: GameManagerScript
+    className: ObjData
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: TalkManager
   platform: 13
   scenePathNames:
   - Assets/Scenes/MainScreen.unity
