@@ -70,7 +70,7 @@ public class PlayerJoyStick : MonoBehaviour
 
 
         //  bool jumpPress = playerInput.Player.Jump.IsPressed();
-        bool jumpPress = playerInput.Player.Jump.triggered || playerInput.Player.Jump.IsPressed();
+        bool jumpPress = playerInput.Player.Jump.triggered;//|| playerInput.Player.Jump.IsPressed();
         if (jumpPress && !animator.GetBool("isJumping"))
         {
             rigid.AddForce(Vector2.up * 20, ForceMode2D.Impulse);
@@ -100,7 +100,7 @@ public class PlayerJoyStick : MonoBehaviour
        
         //Landing Platform
         //Debug.DrawRay(rigid.position, Vector3.down , new Color(0,1,0));
-        if (rigid.velocity.y < 0)
+        if (rigid.velocity.y <= 0)
         {
             RaycastHit2D rayHit = Physics2D.Raycast(rigid.position, Vector3.down, 1f, LayerMask.GetMask("Platform"));
             if (rayHit.collider != null)
@@ -112,6 +112,7 @@ public class PlayerJoyStick : MonoBehaviour
                 //  Debug.Log(rayHit.collider.name);
             }
         }
+    
     }
 
 
