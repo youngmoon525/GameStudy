@@ -15,7 +15,11 @@ D:/02.Study/99.Git/GameStudy/SyGame/SyPj
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
+<<<<<<< Updated upstream
 55966
+=======
+55185
+>>>>>>> Stashed changes
 Successfully changed project path to: D:/02.Study/99.Git/GameStudy/SyGame/SyPj
 D:/02.Study/99.Git/GameStudy/SyGame/SyPj
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,11 +53,19 @@ D:/02.Study/99.Git/GameStudy/SyGame/SyPj
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
+<<<<<<< Updated upstream
 Player connection [26464] Host "[IP] 192.168.0.102 [Port] 0 [Flags] 2 [Guid] 2660261779 [EditorId] 2660261779 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-ICOHF08) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
 Player connection [26464] Host "[IP] 192.168.0.102 [Port] 0 [Flags] 2 [Guid] 2660261779 [EditorId] 2660261779 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-ICOHF08) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 Refreshing native plugins compatible for Editor in 20.20 ms, found 4 plugins.
+=======
+Player connection [26148] Host "[IP] 192.168.0.102 [Port] 0 [Flags] 2 [Guid] 3457859269 [EditorId] 3457859269 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-ICOHF08) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [26148] Host "[IP] 192.168.0.102 [Port] 0 [Flags] 2 [Guid] 3457859269 [EditorId] 3457859269 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-ICOHF08) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 24.73 ms, found 4 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.5f1 (9674261d40ee)
 [Subsystems] Discovering subsystems at path D:/Program Files/Unity/2022.3.5f1/Editor/Data/Resources/UnitySubsystems
@@ -69,12 +81,17 @@ Initialize mono
 Mono path[0] = 'D:/Program Files/Unity/2022.3.5f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Program Files/Unity/2022.3.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/Program Files/Unity/2022.3.5f1/Editor/Data/MonoBleedingEdge/etc'
+<<<<<<< Updated upstream
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56036
+=======
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56440
+>>>>>>> Stashed changes
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Program Files/Unity/2022.3.5f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: D:/Program Files/Unity/2022.3.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: D:/Program Files/Unity/2022.3.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+<<<<<<< Updated upstream
 Registered in 0.009786 seconds.
 - Loaded All Assemblies, in  0.545 seconds
 Native extension for WindowsStandalone target not found
@@ -85,11 +102,24 @@ Mono: successfully reloaded assembly
 - Finished resetting the current domain, in  3.087 seconds
 Domain Reload Profiling: 3632ms
 	BeginReloadAssembly (174ms)
+=======
+Registered in 0.010243 seconds.
+- Loaded All Assemblies, in  0.443 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 2458 ms
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.832 seconds
+Domain Reload Profiling: 3274ms
+	BeginReloadAssembly (149ms)
+>>>>>>> Stashed changes
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
+<<<<<<< Updated upstream
 	RebuildCommonClasses (55ms)
 	RebuildNativeTypeToScriptingClass (13ms)
 	initialDomainReloadingComplete (70ms)
@@ -112,6 +142,30 @@ Domain Reload Profiling: 3632ms
 			BeforeProcessingInitializeOnLoad (2ms)
 			ProcessInitializeOnLoadAttributes (147ms)
 			ProcessInitializeOnLoadMethodAttributes (69ms)
+=======
+	RebuildCommonClasses (43ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (65ms)
+	LoadAllAssembliesAndSetupDomain (171ms)
+		LoadAssemblies (151ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (163ms)
+			TypeCache.Refresh (162ms)
+				TypeCache.ScanAssembly (148ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (2832ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2769ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2575ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (120ms)
+			ProcessInitializeOnLoadMethodAttributes (67ms)
+>>>>>>> Stashed changes
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -121,12 +175,18 @@ Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\02.Study\99.Git\GameStudy\SyGame\SyPj\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\02.Study\99.Git\GameStudy\SyGame\SyPj\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+<<<<<<< Updated upstream
 - Loaded All Assemblies, in  1.201 seconds
 Refreshing native plugins compatible for Editor in 8.29 ms, found 4 plugins.
+=======
+- Loaded All Assemblies, in  0.696 seconds
+Refreshing native plugins compatible for Editor in 8.69 ms, found 4 plugins.
+>>>>>>> Stashed changes
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Finished resetting the current domain, in  0.863 seconds
 Domain Reload Profiling: 2064ms
 	BeginReloadAssembly (181ms)
@@ -343,3 +403,123 @@ Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, a
 To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 4
+=======
+- Finished resetting the current domain, in  0.422 seconds
+Domain Reload Profiling: 1117ms
+	BeginReloadAssembly (189ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (28ms)
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (52ms)
+	LoadAllAssembliesAndSetupDomain (405ms)
+		LoadAssemblies (289ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (233ms)
+			TypeCache.Refresh (231ms)
+				TypeCache.ScanAssembly (213ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (423ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (273ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (25ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (75ms)
+			ProcessInitializeOnLoadAttributes (142ms)
+			ProcessInitializeOnLoadMethodAttributes (23ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 7.47 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4425 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (199.6 KB). Loaded Objects now: 4875.
+Memory consumption went from 149.7 MB to 149.5 MB.
+Total: 3.758300 ms (FindLiveObjects: 0.505800 ms CreateObjectMapping: 0.227300 ms MarkObjects: 2.803600 ms  DeleteObjects: 0.219700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 3257133.481304 seconds.
+  path: Assets/Script/PlayerMove.cs
+  artifactKey: Guid(2115d03684b229f469a729b52bd94326) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/PlayerMove.cs using Guid(2115d03684b229f469a729b52bd94326) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebca372f42ccb00a0387ad8c9a7243f2') in 0.002643 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Script/GameMain.cs
+  artifactKey: Guid(2f719131e3c296546899f30551fc4703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/GameMain.cs using Guid(2f719131e3c296546899f30551fc4703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7bd99831f070f49f3a8a5efd09d8ac0') in 0.001581 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/Script/QuestData.cs
+  artifactKey: Guid(f50e4c348615aa6439e5c672154a7ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/QuestData.cs using Guid(f50e4c348615aa6439e5c672154a7ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f96f44cd68adc36083288b9e2e64ea5') in 0.000890 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/Script/EnemyMove.cs
+  artifactKey: Guid(04cc42135cd60434ea76458e8f4d4d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/EnemyMove.cs using Guid(04cc42135cd60434ea76458e8f4d4d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44b58cff2848e684e39cb3fc3c0c13c9') in 0.000583 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/Script/ParallaxBackground.cs
+  artifactKey: Guid(d2958dd94fa71a84b99e63110d0e2433) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/ParallaxBackground.cs using Guid(d2958dd94fa71a84b99e63110d0e2433) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '779fd8f9a4d20b02940fc05b5896f758') in 0.001210 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Script/QuestManager.cs
+  artifactKey: Guid(6c7a57898a422a045ab643c72987f566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/QuestManager.cs using Guid(6c7a57898a422a045ab643c72987f566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a03da7158040268c48bccaf96ce3729') in 0.000686 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/Script/GameManager.cs
+  artifactKey: Guid(970bb955abcf0e341957a8641b377ee5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/GameManager.cs using Guid(970bb955abcf0e341957a8641b377ee5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3faa2279406ecd0e1ba0869921fdd12') in 0.000798 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000139 seconds.
+  path: Assets/Script/PlayerJoyStick.cs
+  artifactKey: Guid(e914694701eb3f44cb72c1445c873f3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/PlayerJoyStick.cs using Guid(e914694701eb3f44cb72c1445c873f3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c92d85073d9d23ba95607282bb5dd617') in 0.000840 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+>>>>>>> Stashed changes
